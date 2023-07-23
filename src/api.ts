@@ -15,7 +15,7 @@ const requestArticles = async (
     sort_type: sortType,
   };
   categoryId && (params["cate_id"] = categoryId);
-
+  // console.log(url, params);
   return new Promise((resolve, reject) => {
     fetch(url, {
       method: "POST",
